@@ -11,3 +11,5 @@ import UIKit
 
 //Segues
 let TO_LOGINVC = "toLoginVC"
+let TO_CREATEACCOUNTVC = "toCreateAccountVC"
+let UNWIND = "unwindToChannelVC"
