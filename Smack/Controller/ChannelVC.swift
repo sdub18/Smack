@@ -9,6 +9,10 @@
 import UIKit
 
 class ChannelVC: UIViewController {
+    
+    //Outlets
+    @IBOutlet weak var loginBtn: UIButton!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,5 +24,9 @@ class ChannelVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    @IBAction func loginBtnPressed(_ sender: Any) {
+        performSegue(withIdentifier: TO_LOGINVC, sender: nil)
+    }
+    
+    
 }
