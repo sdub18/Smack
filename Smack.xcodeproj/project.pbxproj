@@ -16,6 +16,8 @@
 		310558722016292B009B329A /* SmackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310558712016292B009B329A /* SmackTests.swift */; };
 		3105587D2016292B009B329A /* SmackUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3105587C2016292B009B329A /* SmackUITests.swift */; };
 		3105588F201635D5009B329A /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3105588E201635D5009B329A /* SWRevealViewController.m */; };
+		311E239C201E4E5D00735F2A /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311E239B201E4E5D00735F2A /* AuthService.swift */; };
+		311E239E201E6BE600735F2A /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311E239D201E6BE600735F2A /* RoundedButton.swift */; };
 		3159780220184EBB00A8E268 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3159780120184EBB00A8E268 /* ChatVC.swift */; };
 		3159780420184ECD00A8E268 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3159780320184ECD00A8E268 /* ChannelVC.swift */; };
 		31597806201A884100A8E268 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31597805201A884100A8E268 /* GradientView.swift */; };
@@ -61,6 +63,8 @@
 		3105588C201635D4009B329A /* Smack-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Smack-Bridging-Header.h"; sourceTree = "<group>"; };
 		3105588D201635D5009B329A /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		3105588E201635D5009B329A /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		311E239B201E4E5D00735F2A /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		311E239D201E6BE600735F2A /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		3159780120184EBB00A8E268 /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 		3159780320184ECD00A8E268 /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
 		31597805201A884100A8E268 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
@@ -128,6 +132,7 @@
 		3105585B2016292B009B329A /* Smack */ = {
 			isa = PBXGroup;
 			children = (
+				311E239A201E4E4A00735F2A /* Services */,
 				31597807201BAE5D00A8E268 /* Utilities */,
 				3159780020184E9B00A8E268 /* Model */,
 				315977FF20184E9200A8E268 /* View */,
@@ -170,6 +175,14 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		311E239A201E4E4A00735F2A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				311E239B201E4E5D00735F2A /* AuthService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		315977FE20184E8C00A8E268 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -185,6 +198,7 @@
 			isa = PBXGroup;
 			children = (
 				31597805201A884100A8E268 /* GradientView.swift */,
+				311E239D201E6BE600735F2A /* RoundedButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -510,8 +524,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3159780420184ECD00A8E268 /* ChannelVC.swift in Sources */,
+				311E239E201E6BE600735F2A /* RoundedButton.swift in Sources */,
 				3159780220184EBB00A8E268 /* ChatVC.swift in Sources */,
 				3159780D201BB65000A8E268 /* CreateAccountVC.swift in Sources */,
+				311E239C201E4E5D00735F2A /* AuthService.swift in Sources */,
 				3159780B201BB29F00A8E268 /* LoginVC.swift in Sources */,
 				31597806201A884100A8E268 /* GradientView.swift in Sources */,
 				3105585D2016292B009B329A /* AppDelegate.swift in Sources */,
