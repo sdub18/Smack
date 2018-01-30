@@ -16,6 +16,7 @@
 		310558722016292B009B329A /* SmackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310558712016292B009B329A /* SmackTests.swift */; };
 		3105587D2016292B009B329A /* SmackUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3105587C2016292B009B329A /* SmackUITests.swift */; };
 		3105588F201635D5009B329A /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3105588E201635D5009B329A /* SWRevealViewController.m */; };
+		311B32A6201EE9220061B75A /* UserDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311B32A5201EE9220061B75A /* UserDataService.swift */; };
 		311E239C201E4E5D00735F2A /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311E239B201E4E5D00735F2A /* AuthService.swift */; };
 		311E239E201E6BE600735F2A /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311E239D201E6BE600735F2A /* RoundedButton.swift */; };
 		3159780220184EBB00A8E268 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3159780120184EBB00A8E268 /* ChatVC.swift */; };
@@ -63,6 +64,7 @@
 		3105588C201635D4009B329A /* Smack-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Smack-Bridging-Header.h"; sourceTree = "<group>"; };
 		3105588D201635D5009B329A /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		3105588E201635D5009B329A /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		311B32A5201EE9220061B75A /* UserDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataService.swift; sourceTree = "<group>"; };
 		311E239B201E4E5D00735F2A /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		311E239D201E6BE600735F2A /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		3159780120184EBB00A8E268 /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
@@ -179,6 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				311E239B201E4E5D00735F2A /* AuthService.swift */,
+				311B32A5201EE9220061B75A /* UserDataService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -526,6 +529,7 @@
 				3159780420184ECD00A8E268 /* ChannelVC.swift in Sources */,
 				311E239E201E6BE600735F2A /* RoundedButton.swift in Sources */,
 				3159780220184EBB00A8E268 /* ChatVC.swift in Sources */,
+				311B32A6201EE9220061B75A /* UserDataService.swift in Sources */,
 				3159780D201BB65000A8E268 /* CreateAccountVC.swift in Sources */,
 				311E239C201E4E5D00735F2A /* AuthService.swift in Sources */,
 				3159780B201BB29F00A8E268 /* LoginVC.swift in Sources */,
