@@ -16,6 +16,7 @@
 		310558722016292B009B329A /* SmackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310558712016292B009B329A /* SmackTests.swift */; };
 		3105587D2016292B009B329A /* SmackUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3105587C2016292B009B329A /* SmackUITests.swift */; };
 		3105588F201635D5009B329A /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3105588E201635D5009B329A /* SWRevealViewController.m */; };
+		310B32A52023582E00A92F6B /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310B32A42023582E00A92F6B /* CircleImage.swift */; };
 		311B32A6201EE9220061B75A /* UserDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311B32A5201EE9220061B75A /* UserDataService.swift */; };
 		311B32A82020EA090061B75A /* AvatarPickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311B32A72020EA090061B75A /* AvatarPickerVC.swift */; };
 		311B32AA202110330061B75A /* AvatarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311B32A9202110330061B75A /* AvatarCell.swift */; };
@@ -66,6 +67,7 @@
 		3105588C201635D4009B329A /* Smack-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Smack-Bridging-Header.h"; sourceTree = "<group>"; };
 		3105588D201635D5009B329A /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		3105588E201635D5009B329A /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		310B32A42023582E00A92F6B /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		311B32A5201EE9220061B75A /* UserDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataService.swift; sourceTree = "<group>"; };
 		311B32A72020EA090061B75A /* AvatarPickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarPickerVC.swift; sourceTree = "<group>"; };
 		311B32A9202110330061B75A /* AvatarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarCell.swift; sourceTree = "<group>"; };
@@ -208,6 +210,7 @@
 				31597805201A884100A8E268 /* GradientView.swift */,
 				311E239D201E6BE600735F2A /* RoundedButton.swift */,
 				311B32A9202110330061B75A /* AvatarCell.swift */,
+				310B32A42023582E00A92F6B /* CircleImage.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -535,6 +538,7 @@
 				3159780420184ECD00A8E268 /* ChannelVC.swift in Sources */,
 				311B32A82020EA090061B75A /* AvatarPickerVC.swift in Sources */,
 				311E239E201E6BE600735F2A /* RoundedButton.swift in Sources */,
+				310B32A52023582E00A92F6B /* CircleImage.swift in Sources */,
 				3159780220184EBB00A8E268 /* ChatVC.swift in Sources */,
 				311B32A6201EE9220061B75A /* UserDataService.swift in Sources */,
 				3159780D201BB65000A8E268 /* CreateAccountVC.swift in Sources */,

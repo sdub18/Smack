@@ -121,7 +121,7 @@
                                     <action selector="loginBtnPressed:" destination="4xC-Ar-J8v" eventType="touchUpInside" id="zrX-xE-jUp"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menuProfileIcon" translatesAutoresizingMaskIntoConstraints="NO" id="fng-ez-ktO">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menuProfileIcon" translatesAutoresizingMaskIntoConstraints="NO" id="fng-ez-ktO" customClass="CircleImage" customModule="Smack" customModuleProvider="target">
                                 <rect key="frame" x="16" y="572" width="75" height="75"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="75" id="QSK-O3-yBL"/>
@@ -415,7 +415,7 @@
                                     <action selector="pickAvatarPressed:" destination="1fZ-w1-k4d" eventType="touchUpInside" id="Utk-Uq-b7Z"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileDefault" translatesAutoresizingMaskIntoConstraints="NO" id="RzG-Ge-i0w">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileDefault" translatesAutoresizingMaskIntoConstraints="NO" id="RzG-Ge-i0w" customClass="CircleImage" customModule="Smack" customModuleProvider="target">
                                 <rect key="frame" x="137" y="314" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="BY7-Ir-vK9"/>
@@ -433,9 +433,18 @@
                                     <action selector="generateBgPressed:" destination="1fZ-w1-k4d" eventType="touchUpInside" id="pCy-99-TJ6"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="PRe-D3-0Jh">
+                                <rect key="frame" x="169" y="513" width="37" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="gwp-hC-hn0"/>
+                                    <constraint firstAttribute="width" constant="37" id="plF-hm-Pod"/>
+                                </constraints>
+                                <color key="color" red="0.25882352939999997" green="0.3294117647" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="PRe-D3-0Jh" firstAttribute="top" secondItem="Ujm-aB-Aom" secondAttribute="bottom" constant="36" id="7TJ-8K-za3"/>
                             <constraint firstItem="b3g-hh-T5m" firstAttribute="centerX" secondItem="YFx-cU-NRf" secondAttribute="centerX" id="9bq-Xs-kDQ"/>
                             <constraint firstItem="uBb-tw-Njj" firstAttribute="centerX" secondItem="YFx-cU-NRf" secondAttribute="centerX" id="BUs-r3-qbN"/>
                             <constraint firstItem="CH5-ug-hiI" firstAttribute="top" secondItem="APj-DF-Z1q" secondAttribute="top" constant="40" id="BZB-Zv-AIN"/>
@@ -450,6 +459,7 @@
                             <constraint firstItem="b3g-hh-T5m" firstAttribute="width" secondItem="RzG-Ge-i0w" secondAttribute="width" id="Z82-UW-rhY"/>
                             <constraint firstItem="b3g-hh-T5m" firstAttribute="top" secondItem="RzG-Ge-i0w" secondAttribute="top" id="cPM-kv-hwp"/>
                             <constraint firstItem="APj-DF-Z1q" firstAttribute="trailing" secondItem="IlS-j6-DGP" secondAttribute="trailing" constant="16" id="hqj-ZC-2uy"/>
+                            <constraint firstItem="PRe-D3-0Jh" firstAttribute="centerX" secondItem="YFx-cU-NRf" secondAttribute="centerX" id="kJQ-sI-bLx"/>
                             <constraint firstItem="IlS-j6-DGP" firstAttribute="top" secondItem="APj-DF-Z1q" secondAttribute="top" constant="8" id="qxL-Ju-sKk"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="APj-DF-Z1q"/>
@@ -457,6 +467,7 @@
                     <connections>
                         <outlet property="emailTxt" destination="qQx-51-VyR" id="J4x-hW-MiO"/>
                         <outlet property="passwordTxt" destination="FFi-AQ-F0C" id="gIK-0O-8Oc"/>
+                        <outlet property="spinner" destination="PRe-D3-0Jh" id="bCB-0g-1Db"/>
                         <outlet property="userImg" destination="RzG-Ge-i0w" id="S9l-QZ-3Z2"/>
                         <outlet property="usernameTxt" destination="wdK-lK-X7N" id="ys2-DO-l4X"/>
                         <segue destination="SSM-86-tDC" kind="unwind" identifier="unwindToChannelVC" unwindAction="prepareForUnwindWithSegue:" id="RN4-HR-chm"/>
@@ -515,7 +526,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WLn-N0-7lW">
-                                                    <rect key="frame" x="10" y="10" width="80" height="90"/>
+                                                    <rect key="frame" x="10" y="10" width="80" height="80"/>
                                                 </imageView>
                                             </subviews>
                                         </view>
