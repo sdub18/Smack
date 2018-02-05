@@ -9,16 +9,37 @@
 import UIKit
 
 class LoginVC: UIViewController {
+    
+    //Outlets
+    @IBOutlet weak var usrnameTxt: UITextField!
+    @IBOutlet weak var psswdTxt: UITextField!
+    @IBOutlet weak var activityWheel: UIActivityIndicatorView!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        setUpView()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    @IBAction func loginPressed(_ sender: Any) {
+        activityWheel.isHidden = false
+        activityWheel.startAnimating()
+        
+        guard let email = usrnameTxt.text , usrnameTxt.text != "" else { return }
+        guard let pass = psswdTxt.text, psswdTxt.text != "" else { return }
+        
+        AuthService.instance.logInUser(email: email, pass: pass) { (success) in
+            if success {
+                AuthService.instance.findUserByEmail(completion: { (success) in
+                    if success {
+                        NotificationCenter.default.post(name: NOTIF_USER_DATA_CHANGED, object: nil)
+                        self.activityWheel.isHidden = true
+                        self.activityWheel.stopAnimating()
+                        self.dismiss(animated: true, completion: nil)
+                    }
+                })
+            }
+        }
     }
     
     @IBAction func closedPressed(_ sender: Any) {
@@ -28,14 +49,11 @@ class LoginVC: UIViewController {
     @IBAction func createAccountBtnPressed(_ sender: Any) {
         performSegue(withIdentifier: TO_CREATEACCOUNTVC, sender: nil)
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    
+    func setUpView() {
+        activityWheel.isHidden = true
+        usrnameTxt.attributedPlaceholder = NSAttributedString(string: "Email", attributes: [NSAttributedStringKey.foregroundColor: smackPurplePlaceHolder])
+        psswdTxt.attributedPlaceholder = NSAttributedString(string: "Password", attributes: [NSAttributedStringKey.foregroundColor: smackPurplePlaceHolder])
     }
-    */
 
 }
